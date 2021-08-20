@@ -1,0 +1,27 @@
+@import './hero-section';
+
+.section {
+  margin-bottom: 10px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid black;
+  }
+
+  & .container {
+    text-align: center;
+  }
+}
+
+.title {
+  @include titleFont(26px);
+
+  margin-bottom: 5px;
+}
+
+.text {
+  @include textFont(18px);
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
+}

@@ -46,6 +46,7 @@ ol {
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Упрощаем работу с изображениями */
@@ -66,4 +67,8 @@ select {
 button {
   padding: 0px;
   margin: 0px;
+}
+
+body {
+  @include textFont;
 }

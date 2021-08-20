@@ -1,0 +1,14 @@
+@mixin titleFont($size: 36px) {
+  font-family: 'Merriweather', serif;
+  font-size: $size;
+  font-weight: 700;
+}
+
+@mixin textFont($size: 24px) {
+  font-family: 'Lobster', cursive;
+  font-size: $size;
+  font-weight: 400;
+}
+
+// font-family: 'Lobster', cursive;
+// font-family: 'Merriweather', serif;
