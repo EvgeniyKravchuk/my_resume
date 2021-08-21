@@ -2,7 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"VxPX":[function(require,module,exports) {
 const e={openNavButton:document.querySelector(".open-nav-button"),nav:document.querySelector(".nav"),page:document.querySelector("title"),navItems:document.querySelectorAll(".nav-list-item")};function t(){e.openNavButton.addEventListener("click",t=>{console.log(t.currentTarget),e.nav.classList.toggle("hide")})}function a(){switch(e.page.text){case"Резюме":e.navItems[0].classList.add("active");break;case"Автобиография":console.log("Автобиография"),e.navItems[1].classList.add("active");break;case"Мои работы":console.log("работы"),e.navItems[2].classList.add("active");break;default:alert("Если бы мы знали что это такое, но мы не знаем что это такое 🤣")}}t(),a();
-},{}],"Focm":[function(require,module,exports) {
+},{}],"WaZi":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/nav-modal.js");
-},{"./sass/main.scss":"clu1","./js/nav-modal.js":"VxPX"}]},{},["Focm"], null)
-//# sourceMappingURL=/my_resume/src.203af0c7.js.map
+},{"./sass/main.scss":"clu1","./js/nav-modal.js":"VxPX"}]},{},["WaZi"], null)
+//# sourceMappingURL=/my_resume/biografy-page.6cd419ff.js.map
