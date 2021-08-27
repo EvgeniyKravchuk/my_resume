@@ -3,19 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Resume</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Serif', serif; -->
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+      <p class="header__pretitle">
+        <span class="header__pretitle--item">TRAINEE/JUNIOR</span>
+        <span class="header__pretitle--item">FRONT-END DEVELOPER</span>
+      </p>
+      <h1 class="header__title">
+        <span class="header__title--item">КРАВЧУК</span>
+        <span class="header__title--item">ЕВГЕНИЙ</span>
+      </h1>
+      <img class="header__image" src="#" alt="" />
+    </header>
+    <div class="left-side">
+      <section class="contacts">
+        <h2 class="contacts__title">МОИ КОНТАКТЫ</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380502431823">Телефон: +380502431823</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380635642782">Телефон: +380635642782</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:kravchukmail23@gmail.com"
+              >Gmail: kravchukmail23@gmail.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" target="_blank" href="https://github.com/EvgeniyKravchuk"
+              >GitHub: EvgeniyKravchuk
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a
+              class="contacts__link"
+              target="_blank"
+              href="https://www.linkedin.com/in/evgeny-kravchuk-7459a621a/"
+              >LinkedIn: Evgeny Kravchuk
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="tech-skills">
+        <h2>Технические навыки/tech-skills</h2>
+        <ul class="tech-skills__list">
+          <li class="tech-skills__item">HTML5, CSS3, JavaScripsES6+</li>
+          <li class="tech-skills__item">Адаптивная/отзывчивая вёрстка</li>
+          <li class="tech-skills__item">Препроцессор (SASS)</li>
+          <li class="tech-skills__item">Сборщики (Parcel, Webpack)</li>
+          <li class="tech-skills__item">React.js framework</li>
+          <li class="tech-skills__item">Redux</li>
+          <li class="tech-skills__item">NPM</li>
+          <li class="tech-skills__item">Git</li>
+          <li class="tech-skills__item">SCRUM metodology</li>
+          <li class="tech-skills__item">BEM metodology</li>
+        </ul>
+      </section>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+      <section class="soft-skills">
+        <h2 class="soft-skills__title">Гибкие навыки/soft skills</h2>
+        <ul class="soft-skills__list">
+          <li class="soft-skills__item">Коммуникабельность</li>
+          <li class="soft-skills__item">Самоорганизация</li>
+          <li class="soft-skills__item">Креативность</li>
+          <li class="soft-skills__item">Умение работать с информацией</li>
+          <li class="soft-skills__item">Стрессоустойчивость</li>
+        </ul>
+      </section>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
